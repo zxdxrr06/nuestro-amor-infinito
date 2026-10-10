@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09091c">
+    <title>Nuestro amor infinito 💚💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="experiencia">
+
+        <!-- 1. SORPRESA INICIAL -->
+        <section id="inicio" class="pantalla activa">
+            <div class="estrellas-fondo"></div>
+            <div class="inicio-contenido">
+                <p class="sobrelinea">PARA EL AMOR DE MI VIDA</p>
+                <h1>Hay algo que quiero mostrarte...</h1>
+                <p class="subtitulo">Un pequeño viaje por lo inmenso que siento por ti</p>
+                <button id="botonSorpresa" class="boton-principal">
+                    Descubrir mi sorpresa 💗
+                </button>
+            </div>
+        </section>
+
+        <!-- 2. CORAZÓN CON PUERTAS -->
+        <section id="pantallaCorazon" class="pantalla">
+            <div class="corazon-contenido">
+                <p class="sobrelinea">UNA PUERTA A NUESTRO UNIVERSO</p>
+
+                <div class="marco-corazon">
+                    <svg id="corazonPuertas" class="dibujo-corazon"
+                         viewBox="0 0 300 280" role="img"
+                         aria-label="Un corazón que se abre">
+                        <defs>
+                            <linearGradient id="bordeCorazon" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#ffd0ed"/>
+                                <stop offset="50%" stop-color="#a99aff"/>
+                                <stop offset="100%" stop-color="#75e1ff"/>
+                            </linearGradient>
+                        </defs>
+
+                        <path class="borde-exterior"
+                              d="M150 254
+                                 C127 231 25 167 25 91
+                                 C25 35 91 14 150 76
+                                 C209 14 275 35 275 91
+                                 C275 167 173 231 150 254 Z"/>
+
+                        <g class="puerta-izquierda">
+                            <path d="M150 83
+                                     C115 48 61 43 43 83
+                                     C25 125 83 181 150 235 Z"
+                                  class="hoja"/>
+                            <path d="M129 95 L129 210" class="detalle-puerta"/>
+                            <circle cx="136" cy="163" r="3.5" class="pomo"/>
+                        </g>
+
+                        <g class="puerta-derecha">
+                            <path d="M150 83
+                                     C185 48 239 43 257 83
+                                     C275 125 217 181 150 235 Z"
+                                  class="hoja"/>
+                            <path d="M171 95 L171 210" class="detalle-puerta"/>
+                            <circle cx="164" cy="163" r="3.5" class="pomo"/>
+                        </g>
+                    </svg>
+                    <div class="resplandor-corazon"></div>
+                </div>
+
+                <h2>Abre tu corazón, amor mío</h2>
+                <p>Lo que viene después es un pedacito de mi infinito para ti</p>
+                <button id="botonAbrir" class="boton-principal">
+                    Entrar a nuestro universo ✨
+                </button>
+            </div>
+        </section>
+
+        <!-- 3. VIAJE POR EL UNIVERSO -->
+        <section id="universo" class="pantalla">
+            <div id="campoEstrellas" class="campo-estrellas"></div>
+            <div class="nebulosa nebulosa-una"></div>
+            <div class="nebulosa nebulosa-dos"></div>
+            <div class="nebulosa nebulosa-tres"></div>
+
+            <div class="texto-viaje">
+                <p id="fraseViaje">Entre millones de estrellas, te elegiría a ti 💚</p>
+            </div>
+
+            <!-- Globo de corazón con forma SVG -->
+            <div id="globo" class="globo" aria-label="Globo de corazón K más F">
+                <div class="halo-globo"></div>
+
+                <svg class="figura-globo" viewBox="0 0 120 120"
+                     role="img" aria-label="Corazón rosa con las iniciales K más F">
+                    <defs>
+                        <linearGradient id="colorGlobo" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#ffd0eb"/>
+                            <stop offset="48%" stop-color="#f17dbd"/>
+                            <stop offset="100%" stop-color="#a77bf4"/>
+                        </linearGradient>
+                        <filter id="sombraGlobo" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="3" result="desenfoque"/>
+                            <feMerge>
+                                <feMergeNode in="desenfoque"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <path class="silueta-globo"
+                          d="M60 103
+                             C51 94 13 66 13 39
+                             C13 17 38 8 60 31
+                             C82 8 107 17 107 39
+                             C107 66 69 94 60 103 Z"
+                          fill="url(#colorGlobo)"
+                          filter="url(#sombraGlobo)"/>
+
+                    <path d="M31 29 C37 20 46 22 51 27"
+                          class="reflejo-globo"/>
+
+                    <text x="60" y="60" class="texto-iniciales">K + F</text>
+                </svg>
+
+                <div class="cuerda-globo"></div>
+            </div>
+
+            <div id="portalFinal" class="portal-final">
+                <div class="anillo anillo-uno"></div>
+                <div class="anillo anillo-dos"></div>
+                <div class="centro-portal"></div>
+            </div>
+
+            <div id="mensajeFinal" class="mensaje-final">
+                <div class="corazon-final">♡</div>
+                <p class="sobrelinea">MI PERSONA FAVORITA</p>
+                <h2>Mi amor infinito</h2>
+                <p class="dedicatoria">
+                    Si nuestro amor puede llegar hasta el infinito,
+                    quiero pasar la eternidad descubriendo nuevos
+                    universos contigo.
+                </p>
+                <h3>Mi lugar favorito siempre será a tu lado 💚💙</h3>
+                <span class="firma">Con amor de tu esposo, para ti ❤️</span>
+                <button id="botonRepetir" class="boton-secundario">
+                    Volver a vivir nuestro viaje ✨
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
